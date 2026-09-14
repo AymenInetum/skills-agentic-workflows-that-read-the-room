@@ -8,8 +8,9 @@ on:
 permissions:
   contents: read
 tools:
-  edit: 
-  web-fetch: 
+  edit:
+  web-fetch:
+  playwright:
 network:
   allowed:
     - github.blog
@@ -35,3 +36,12 @@ Read `notes/mona-notes.md` before starting. Fetch all of these sources:
 Using the notes and the fetched sources, update only `site/content/github-info.md` with concise, practical information and source links. Preserve useful existing content when it remains accurate, and do not edit any other file.
 
 When an update is needed, open a draft pull request for Mona to review using the configured `safe-outputs.create-pull-request`. Never write directly to `main`; do not use direct git or GitHub write operations. If no useful, well-supported update is needed, use `noop` with a brief reason.
+
+Use the provided Playwright browser to read the three required source URLs.
+Follow the installed Playwright instructions and keep all network requests
+within the configured allowed domains.
+
+Read the actual page content before updating site/content/github-info.md.
+Do not substitute invented information for unavailable sources.
+If the sources remain inaccessible, report the task as incomplete using
+safeoutputs report_incomplete, with the exact error.
