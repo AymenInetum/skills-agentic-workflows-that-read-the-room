@@ -1,7 +1,11 @@
 ---
 name: update-github-info
 description: Keep the GitHub information page current with concise updates from GitHub Blog sources.
-engine: copilot
+engine:
+  id: copilot
+  model: copilot/auto
+  env:
+    COPILOT_PROVIDER_WIRE_API: responses
 on:
   schedule: daily
   workflow_dispatch:
