@@ -14,6 +14,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -25,10 +26,11 @@ safe-outputs:
 
 # Update GitHub Information
 
-Read `notes/mona-notes.md` before starting. Fetch both of these sources:
+Read `notes/mona-notes.md` before starting. Fetch all of these sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
 Using the notes and the fetched sources, update only `site/content/github-info.md` with concise, practical information and source links. Preserve useful existing content when it remains accurate, and do not edit any other file.
 
